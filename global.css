@@ -1,0 +1,51 @@
+/* ========== Global Styles ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+  }
+  
+  body {
+    font-family: 'Satoshi', sans-serif;
+    
+    }
+  
+  .wave-logo-img {
+    width: 40px;
+    height: 40px;
+  }
+  h1, h2, h3, p {
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    color: #5e128b; 
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+    max-width: 800px;
+  }
+  

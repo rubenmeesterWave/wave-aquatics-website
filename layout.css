@@ -1,0 +1,35 @@
+/* ========== Layout Containers ========== */
+.main {
+    height: 90vh;
+    width: 100%;
+
+  }
+  
+  .hero {
+    height: 90%;
+    width: 100%;
+    background-image: url(/img/main-background-img.jpg); 
+    background-size: 100%; 
+    background-position: 90% center; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-content-container{
+    height: 50%;
+    width: 80%;
+    
+  }
+.hero-text-span{
+    border-left: 2px solid #9012BB;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+  
+
+  
