@@ -2,7 +2,7 @@
 
 /* ========== Navbar ========== */
 .navbar {
-  height: 80px;
+  height: 15%;
   width: 100%;
   padding: 0 50px;
   background: var(--purple);
@@ -12,8 +12,8 @@
 }
 
 .navbar-logo img {
-  height: 50px;
-  width: 300px;
+  height: 100px;
+  width: 550px;
 }
 
 .nav-navigation {
