@@ -87,8 +87,7 @@
   color: var(--black);
 }
 
-.dropdown-content li a:hover {
-}
+
 
 /* Arrow rotation on open */
 .dropdown-arrow {
@@ -106,7 +105,7 @@
 .row{
     height: 125px;
     width: 100%;
-    border-left: solid 1px var(--purple);
+    border-left: solid 2px var(--purple);
     padding: 0 20px;
     display: flex;
     flex-direction: column;
@@ -129,16 +128,13 @@
 }
 /* ========== Accordion Dropdown ========== */
 
-/* 
- .accordion {
-      max-width: 800px;
-    } */
+
     
 .accordion {
   width: 100%;
-  max-height: 100%;   /* fill container height */
-  overflow-y: auto;   /* scroll if content is too tall */
-  padding-right: 15px; /* prevent content from touching scrollbar */
+  max-height: 80vh;  
+  overflow-y: auto;   
+  padding-right: 15px; 
     scrollbar-gutter: stable;
 
 }
@@ -146,7 +142,7 @@
   width: 8px;
 }
 .accordion::-webkit-scrollbar-thumb {
-  background-color: var(--grey); /* purple scrollbar */
+  background-color: var(--grey); 
   border-radius: 4px;
 }
 

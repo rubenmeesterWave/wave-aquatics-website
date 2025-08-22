@@ -30,17 +30,19 @@
 font-family: 'Poppins', sans-serif;
     }
   .btn {
-  padding: .6rem 1.2rem;
-  border-radius: 25px;
+  padding:14px 26px; 
+  font-size: 1.125rem;
+  border-radius: 40px;
   font-size: 1rem;
+  font-weight: 600;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
-.btn.white { background-color: var(--white); color: var(--black); border: 1px solid var(--white); }
-.btn.purple { background-color: var(--purple); color: var(--white); border: 1px solid var(--purple); }
-.btn.hollow { background-color: transparent; color: var(--black); border: 1px solid var(--black); }
+.btn.white { background-color: var(--white); color: var(--black); border: 2px solid var(--white); }
+.btn.purple { background-color: var(--purple); color: var(--white); border: 2px solid var(--purple); }
+.btn.hollow { background-color: transparent; color: var(--black); border: 2px solid var(--black); }
 
 /* Hover effects */
 .btn.white:hover { background-color: transparent; color: var(--white); border-color: var(--white); }
