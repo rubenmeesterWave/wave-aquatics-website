@@ -5,20 +5,23 @@
     height: 90vh;
     width: 100%;
 }
+ .nav-format-fill{ /* just here to fill space at top missing by navbar */
+  height: 10%;
+  width: 100%;
+}
 .main-container{
-height: 85%;
+height: 100%;
 width: 100%;
 display: flex;
 
 }
 .main-left{
-   height: 100%;
+   height: 90%;
     width: 50%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    /* align-items: start; */
-    padding:0 100px 0 150px ;
+    align-items: center;
+    padding:100px 100px 0 150px ;
     text-align: start;
 }
 .main-left h1{
@@ -28,24 +31,11 @@ display: flex;
     padding: 20px 0;
 }
 
-/* .row{
-    height: 125px;
-    width: 100%;
-    border-left: solid 2px var(--purple);
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    
-} */
-/* .row-btn{
-    padding-bottom: 10px;
-} */
+
 
 
 .main-right{
-    height: 100%;
+    height: 90%;
 width: 50%;
 background-image: url(/imgs/SwimKid.png);
 background-size: cover;      
@@ -80,7 +70,7 @@ background-size: cover;
     background-color: rgba(255, 255, 255, 0.8); 
     height: 100%;
     width: 40%;
-    padding: 10px 20px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -140,7 +130,7 @@ background-size: cover;
 /* ========== Announcements ========== */
 
 .announcements{
-    height: 50vh;
+    height: 90vh;
     width: 100%;
     background-color: var(--skyblue);
     display: flex;
@@ -173,6 +163,21 @@ width: 100%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   background-color: var(--white);
   box-sizing: border-box;
+}
+.news-item-img{
+  height: 300px;
+  width: 700px;
+background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+    border-radius: 8px;
+
+}
+.news-item-img.one{
+  background-image: url(/imgs/SwimKid2.jpg);
+}
+.news-item-img.two{
+  background-image: url(/imgs/SwimTeamKid.jpeg);
 }
 
 .news-left h4 {
@@ -324,6 +329,8 @@ background-size: cover;
   height: fit-content;
   text-align: center;
   padding: 20px;
+    border-radius: 8px;
+
    background-color: rgba(255, 255, 255, 0.1); 
   background-color: var(--white);
   transition: transform 0.3s ease, background-color 0.3s ease;
@@ -385,13 +392,16 @@ gap: 15px;
 .newsletter-right{
     height: 100%;
     width: 50%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
   }
 
 .newsletter-logo{
-    height: 70%;
-    width: 70%;
+    height: 100%;
+    width: 100%;
     background-image: url(/imgs/Wave-Logo-Purple.png);
-background-size: 90%;      
+background-size: 60%;      
   background-position: center;  
   background-repeat: no-repeat; 
 }
@@ -428,7 +438,105 @@ input[type="email"]:valid {
   border-color: var(--green);
 } */
 footer{
-    height: 20vh;
+    height: 50vh;
     width: 100%;
     background-color: var(--black);
+    padding: 0 50px;
 }
+.footer-top{
+    height: 80%;
+    width: 100%;
+    border-bottom: solid 1px var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer-logo{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+        padding: 20px 0;
+
+    
+}
+.footer-logo p{    color: var(--white);
+    max-width: 400px;
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+.footer-logo img{
+ height: 80px;
+  width: 500px;
+  position: relative;
+    left: -90px;
+}
+.footer-links{
+ height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    padding: 50px 0;
+}
+.footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-links a{
+    color: var(--white);
+    text-decoration: none;
+    margin: 5px 0;
+}
+.footer-contact{
+
+   height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+        padding: 50px 0;
+
+}
+.footer-contact p{
+    color: var(--white);
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+.footer-bottom{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px 0;
+    color: var(--white);
+  }
+  .footer-bottom p{
+color: var(--white);  }
+  .footer-icons{
+   gap: 10px;
+  }     
+  .footer-icons{
+    display: flex;
+    align-items: center;
+  }      
+  .footer-icons a img{
+height: 30px;
+width: 30px;
+  }

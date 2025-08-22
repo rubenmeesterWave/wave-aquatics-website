@@ -2,18 +2,22 @@
 
 /* ========== Navbar ========== */
 .navbar {
-  height: 15%;
+  height: 10%;
   width: 100%;
   padding: 0 50px;
   background: var(--purple);
   display: flex;
   align-items: center;
   justify-content: space-between;
+   position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar-logo img {
-  height: 100px;
-  width: 550px;
+  height: 80px;
+  width: 500px;
 }
 
 .nav-navigation {
