@@ -1,35 +1,262 @@
 /* ========== Layout Containers ========== */
-.main {
+
+/* ========== Landing Page ========== */
+.hero{
     height: 90vh;
     width: 100%;
+}
+.main-container{
+height: 90%;
+width: 100%;
+display: flex;
 
-  }
-  
-  .hero {
-    height: 90%;
-    width: 100%;
-    background-image: url(/img/main-background-img.jpg); 
-    background-size: 100%; 
-    background-position: 90% center; 
-    background-repeat: no-repeat;
+}
+.main-left{
+   height: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-  }
-  .hero-content-container{
-    height: 50%;
-    width: 80%;
-    
-  }
-.hero-text-span{
-    border-left: 2px solid #9012BB;
-    padding-left: 10px;
+    /* align-items: start; */
+    padding:0 50px ;
+    text-align: start;
+}
+
+.hero-cta-top, .hero-bottom{
+    padding: 20px 0;
+}
+
+.row{
+    height: 125px;
+    width: 100%;
+    border-left: solid 1px var(--purple);
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 10px;
+    align-items: start;
+    
 }
-  
+.row-btn{
+    padding-bottom: 10px;
+}
 
+
+.main-right{
+    height: 100%;
+width: 50%;
+background-image: url(/imgs/SwimKid.png);
+background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-info-top{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.hero-info-bottom{
+    height: 60%;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+}
+.hours-container{
+  background-color: rgba(255, 255, 255, 0.8); 
+  height: 60%;
+  padding: 10px 100px 10px 10px ;
+}
+.location-container{
+    background-color: rgba(255, 255, 255, 0.8); 
+    height: 100%;
+    width: 40%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+word-wrap: break-word;     
+  overflow-wrap: break-word;
+}
+
+/* ========== Programs ========== */
+
+.programs{
+height: 100vh;
+width: 100%;
+display: flex;
+background-image: url(/imgs/BackgroundWaves.png);
+background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+  padding-top: 50px;
+}
+.programs-left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* align-items: start; */
+    padding:0 50px ;
+}
+.programs-img{
+    height: 50%;
+    width: 100%;
+    background-image: url(/imgs/SwimKid4.png);
+background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+  margin-top: 10px;
   
+}
+.programs-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding:0 50px ;
+    text-align: start;
+     overflow: hidden;
+}
+.programs-btn-container{
+    height: 75px;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: end;
+}
+/* ========== Announcements ========== */
+
+.announcements{
+    height: 50vh;
+    width: 100%;
+    background-color: var(--skyblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 50px;
+}
+.announcements h2{
+    margin-bottom: 2rem;
+}
+.announcements-box-container{
+
+display: flex;
+justify-content: center;
+gap: 50px;
+width: 100%;
+}
+.news-item {
+  height: 250px;
+  width: 700px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;      
+  justify-content: center;     
+  align-items: center;         
+  gap: 15px;                   
+  text-align: center;         
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: var(--white);
+  box-sizing: border-box;
+}
+
+.news-left h4 {
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.news-left p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+/* ========== Schedule ========== */
+
+.schedule{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+}
+.schedule-left{
+height: 100%;
+width: 50%;
+padding-left: 50px;
+
+}
+
+.schedule-right{
+    height: 100%;
+width: 50%;
+background-image: url(/imgs/SwimKid2.jpg);
+background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+}
+/* ========== About ========== */
+
+.about{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/imgs/SwimTeamKid.jpeg);
+background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+
+}
+.about-content{
+height: 80%;
+width: 80%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;      
+  justify-content: center;     
+  align-items: center;         
+  gap: 15px;                   
+  text-align: center;         
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+
+}
+.about-content h1{
+    color: var(--purple);
+}
+.get-started{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--purple);
+}
+.faqs{
+    height: 130vh;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.newsletter{
+    height: 50vh;
+    width: 100%;
+    background-color: var(--skyblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}

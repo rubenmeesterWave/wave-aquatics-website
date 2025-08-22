@@ -5,47 +5,93 @@
     box-sizing: border-box;
     letter-spacing: 1px;
   }
-  
+  /* Brand Colors */
+  :root {
+  --purple: #9012BB;
+  --grey: #D9D9D9;
+  --black: #000000;
+  --white: #ffffff;
+  --skyblue: #F4FAFE;
+
+  /* Neutral Palette */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-light: #f5f5f5;
+  --color-gray-dark: #333333;
+
+  /* Status Colors */
+  --color-success: #28a745;
+  --color-warning: #ffc107;
+  --color-danger: #dc3545;
+}
   body {
-    font-family: 'Satoshi', sans-serif;
-    
+    /* font-family: 'Satoshi', sans-serif; */
+       font-family: 'Karla', sans-serif;
+font-family: 'Poppins', sans-serif;
     }
-  
-  .wave-logo-img {
-    width: 40px;
-    height: 40px;
-  }
+  .btn {
+  padding: .6rem 1.2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn.white { background-color: var(--white); color: var(--black); border: 1px solid var(--white); }
+.btn.purple { background-color: var(--purple); color: var(--white); border: 1px solid var(--purple); }
+.btn.hollow { background-color: transparent; color: var(--black); border: 1px solid var(--black); }
+
+/* Hover effects */
+.btn.white:hover { background-color: transparent; color: var(--white); border-color: var(--white); }
+.btn.purple:hover { background-color: transparent; color: var(--purple); border-color: var(--purple); }
+.btn.hollow:hover { background-color: var(--purple); color: var(--white); border-color: var(--purple); }
+
   h1, h2, h3, p {
-    font-family: 'Merriweather', serif;
     font-weight: 100;
-    color: #ffffff;
     margin: 0;
+        color: var(--black);
+
   }
   
   h1 {
     font-size: 4rem;
-    font-weight: 700;
-    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
   }
   
   h2 {
-    font-size: 2.25rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 600;
     margin-top: 2rem;
-    color: #5e128b; 
+    margin: 0 0 .25rem 0;
   }
   
   h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 1.5rem;
-    color: #333;
   }
-  
+   h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
+  h4{
+    color: var(--purple);
+    letter-spacing: 5px;
+     text-transform: uppercase;
+  }
+  h5{
+  color: var(--purple);
+     text-transform: uppercase;
+     margin: 0;
+  }
+
   p {
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 400;
-    color: #ffffff;
     max-width: 800px;
+    flex-wrap: wrap;
   }
   

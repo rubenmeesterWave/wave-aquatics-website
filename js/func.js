@@ -1,3 +1,6 @@
+/* ========== Nav Dropdown ========== */
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const toggles = document.querySelectorAll('.dropdown-toggle');
   
@@ -35,4 +38,25 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-  
+
+/* ========== Accordion Dropdown ========== */
+
+ const headers = document.querySelectorAll(".accordion-header");
+
+headers.forEach(header => {
+  header.addEventListener("click", () => {
+    const content = header.nextElementSibling;
+
+    if (content.classList.contains("open")) {
+      // Close this section
+      content.style.maxHeight = null;
+      content.classList.remove("open");
+      header.classList.remove("active");
+    } else {
+      // Open this section
+      content.classList.add("open");
+      header.classList.add("active");
+      content.style.maxHeight = content.scrollHeight + "px"; // dynamic height
+    }
+  });
+});
