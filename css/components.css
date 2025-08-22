@@ -1,35 +1,105 @@
 
 
 /* ========== Navbar ========== */
-.navbar{
-height: 10%;
-width: 100%;
-padding: 0 50px;
-background:var(--purple);
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-.navbar-menu{
+.navbar {
+  height: 80px;
+  width: 100%;
+  padding: 0 50px;
+  background: var(--purple);
   display: flex;
-  gap: 15px;
-  list-style: none;
-  margin-right: 25px;
+  align-items: center;
+  justify-content: space-between;
 }
-.nav-navigation li a,a{
-    text-decoration: none;
-    color: var(--white);
-}
-.nav-navigation{
-    display: flex;
-}
-.navbar-logo img{
-    height: 50px;
-    width: 300px;
-    display: flex;
-        align-items: center;
 
+.navbar-logo img {
+  height: 50px;
+  width: 300px;
 }
+
+.nav-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: var(--white);
+  position: relative;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline effect */
+.navbar-menu li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.navbar-menu li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navbar-menu li a:hover {
+  color: #f0f0f0;
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--purple);
+  min-width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.dropdown-content li a {
+  padding: 10px 15px;
+  display: block;
+  color: var(--white);
+}
+
+.dropdown-content li a:hover {
+  background: #9012BB;
+}
+
+/* Arrow rotation on open */
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+  stroke: white;
+}
+
+.dropdown-toggle.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
 
 
 /* ========== Components Styles ========== */
