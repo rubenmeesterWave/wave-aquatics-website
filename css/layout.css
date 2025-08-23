@@ -6,7 +6,7 @@
     width: 100%;
 }
  .nav-format-fill{ /* just here to fill space at top missing by navbar */
-  height: 10%;
+  height: 83px;
   width: 100%;
 }
 .main-container{
@@ -160,8 +160,8 @@ width: 100%;
   gap: 15px;                   
   text-align: center;         
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  background-color: var(--white);
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),  /* soft shadow */
+              0 1px 3px rgba(0, 0, 0, 0.08); /* smaller detail shadow */  background-color: var(--white);
   box-sizing: border-box;
 }
 .news-item-img{
@@ -437,6 +437,10 @@ input[type="email"]:focus {
 input[type="email"]:valid {
   border-color: var(--green);
 } */
+
+
+/* ========== Footer ========== */
+
 footer{
     height: 50vh;
     width: 100%;
@@ -540,3 +544,5 @@ color: var(--white);  }
 height: 30px;
 width: 30px;
   }
+
+  
