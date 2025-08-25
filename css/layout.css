@@ -159,9 +159,9 @@ width: 100%;
   align-items: center;         
   gap: 15px;                   
   text-align: center;         
-  border-radius: 8px;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),  /* soft shadow */
-              0 1px 3px rgba(0, 0, 0, 0.08); /* smaller detail shadow */  background-color: var(--white);
+  border-radius: 0 0 8px 8px; /* only bottom corners rounded */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),     0 1px 3px rgba(0, 0, 0, 0.08);
+ background-color: var(--white);
   box-sizing: border-box;
 }
 .news-item-img{
@@ -170,7 +170,7 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),  /* soft shadow */
 background-size: cover;      
   background-position: center;  
   background-repeat: no-repeat; 
-    border-radius: 8px;
+  border-radius: 8px 8px 0 0; /* only top corners rounded */
 
 }
 .news-item-img.one{
@@ -194,7 +194,7 @@ background-size: cover;
 /* ========== Schedule ========== */
 
 .schedule{
-    height: 50vh;
+    height: 100vh;
     width: 100%;
     display: flex;
 }
@@ -204,6 +204,94 @@ width: 50%;
 padding-left: 50px;
 
 }
+
+
+
+
+.schedule-section {  
+    border-radius: 16px; 
+    padding: 20px 50px 0 0; 
+    max-width: 900px; 
+    margin: auto; 
+} 
+
+.section-title { 
+    text-align: center; 
+    font-size: 2rem; 
+    margin-bottom: 1.5rem; 
+    color: var(--purple); 
+} 
+
+.day-selector { 
+    display: flex; 
+    justify-content: center; 
+    gap: 0.5rem; 
+    flex-wrap: wrap; 
+    margin-bottom: 1rem; 
+} 
+
+.day-selector button { 
+    background: var(--white); 
+    border: 2px solid var(--purple); 
+    padding: 0.6rem 1rem; 
+    border-radius: 30px; 
+    font-weight: 600; 
+    color: var(--purple); 
+    cursor: pointer; 
+    transition: ease-in-out 0.3s; 
+} 
+
+.day-selector button.active,
+.day-selector button:hover { 
+    background: var(--purple); 
+    color: var(--white); 
+} 
+
+.schedule-list {
+    border-radius: 12px; 
+    padding: 1rem; 
+    max-height: 450px; 
+    overflow-y: auto; 
+}
+
+.schedule-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.schedule-list::-webkit-scrollbar-thumb {
+    background-color: var(--grey); 
+    border-radius: 4px;
+}
+
+.schedule-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.program { 
+    padding: 0.8rem; 
+    border-bottom: 1px solid var(--grey); 
+} 
+
+.program:last-child { 
+    border-bottom: none; 
+} 
+
+.program-title { 
+    font-weight: 600; 
+    color: var(--purple); 
+} 
+
+.program-time { 
+    font-size: 0.95rem; 
+    color: var(--black);
+} 
+
+@media (max-width: 600px) { 
+    .day-selector { 
+        justify-content: space-between; 
+    } 
+} 
+
 
 .schedule-right{
     height: 100%;
@@ -246,7 +334,7 @@ width: 80%;
 .about-content h1{
     color: var(--purple);
 }
-/* ========== About ========== */
+/* ========== Get Started ========== */
 
 .get-started{
     height: 100vh;
@@ -398,8 +486,8 @@ gap: 15px;
   }
 
 .newsletter-logo{
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     background-image: url(/imgs/Wave-Logo-Purple.png);
 background-size: 60%;      
   background-position: center;  
@@ -409,10 +497,11 @@ background-size: 60%;
   width: 100%;
   display: flex;
   gap: 10px;
-  margin-top: 30px;}
+  margin-top: 30px;
+}
 input[type="email"] {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   padding: 12px 16px;
   border: 2px solid var(--black);
   border-radius: 8px;
@@ -546,3 +635,56 @@ width: 30px;
   }
 
   
+
+.program-content-right.programs{
+  background: none;
+  height: auto;
+  width: 80%;
+  padding: 50px 50px 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+.intro-content-programs{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.program-card{
+    height: 400px;
+    width: 70%;
+    display: flex;
+    box-sizing: border-box;
+}
+.program-card-img{
+    height: 100%;
+    width: 40%;
+background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+}
+.program-card-img.youthlessons{
+    background-image: url(/imgs/SwimLessons.jpeg);
+}
+.program-card-img.lapswim{
+    background-image: url(/imgs/SwimTeamKid.jpeg);
+}
+.program-card-img.swimkidone{
+    background-image: url(/imgs/SwimKid2.jpg);
+}
+.program-card-img.swimkidtwo{
+    background-image: url(/imgs/SwimKid4.png);
+}
+.program-card-content{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 5px;
+    text-align: start;
+    padding: 0 20px;
+}

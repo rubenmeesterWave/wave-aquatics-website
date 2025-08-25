@@ -6,16 +6,15 @@
     <title>Wave Aquatics</title>
 
     <!-- CSS Files -->
-   <link rel="stylesheet" href="../css/components.css">
-<link rel="stylesheet" href="../css/layout.css">
-<link rel="stylesheet" href="../css/global.css">
-
-
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="imgs/logo.png">
+    <link rel="icon" type="image/x-icon" href="/imgs/logo.png">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -291,6 +290,8 @@
       </div>
     </div>
    </section>
+   
+
    <section class="schedule">
     <div class="schedule-left">
          <div class="cta-section-full">
@@ -307,11 +308,27 @@
                 all your swimming dreams and desires. Wave Aquatics is a proven leader in aquatics programming. For more than 30 years, Wave has provided aquatics programming to Eastside community members 
               </p>
               <div class="row-btn">
-               <a href="#signup" class="btn hollow">View Schedule</a>
+               <a href="#signup" class="btn hollow">View Full Schedule</a>
               </div>
             </div>
           </div>
           </div>
+   <div class="schedule-section"> 
+  <h2 class="section-title">Schedule Preview</h2> 
+
+  <div class="day-selector"> 
+    <button onclick="showSchedule('Monday')">Mon</button> 
+    <button onclick="showSchedule('Tuesday')">Tue</button> 
+    <button onclick="showSchedule('Wednesday')">Wed</button> 
+    <button onclick="showSchedule('Thursday')">Thu</button> 
+    <button onclick="showSchedule('Friday')">Fri</button> 
+    <button onclick="showSchedule('Saturday')">Sat</button> 
+    <button onclick="showSchedule('Sunday')">Sun</button> 
+  </div> 
+
+
+    <div class="schedule-list" id="schedule-list"></div>
+</div>
     </div>
     <div class="schedule-right"></div>
    </section>

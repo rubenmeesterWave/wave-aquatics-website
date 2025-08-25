@@ -170,11 +170,12 @@ ul li a {
 .related-pages {
   width: 100%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  height: auto; /* removed fixed height */
+  height: auto;
 }
 
 .related-pages-header {
   width: 100%;
+  padding: 20px 0;
   background-color: var(--purple);
   color: var(--white);
   display: flex;
@@ -189,37 +190,38 @@ ul li a {
 
 .related-pages-list {
   width: 100%;
-  padding: 20px;
+  padding: 0; /* remove extra padding if you want buttons flush */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;   
-  background-color: var(--grey);
-  gap: 15px;
   height: auto;
 }
 
-.related-pages-list ul {
+.related-pages-list ul,
+.related-pages-list li {
   list-style: none;
   padding: 0;
-  margin: 0;
-}
-
-.related-pages-list li {
-  margin-bottom: 20px;
 }
 
 .related-pages-list a {
+  display: block;                 
   text-decoration: none;
   color: var(--black);
   font-weight: 600;
   font-size: 1.25rem;
-  transition: ease-in-out 0.3s;
+  padding: 15px 25px;           
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid var(--grey);
 }
 
 .related-pages-list a:hover {
-  color: var(--purple);
+  background-color: var(--purple);
+  color: var(--white);
+  border-color: var(--purple);
 }
+
+
 
 .intro-content {
   width: 100%;
@@ -232,9 +234,12 @@ ul li a {
   color: var(--purple);
 }
 
+.intro-content ul{
+   list-style: disc;
+  padding-left: 20px;
+}
 
-
-.intro-content ul {
+ .content-block-bottom ul {
   list-style: disc;
   padding-left: 20px;
 }
@@ -256,11 +261,16 @@ ul li a {
 .intro-content-img {
   width: 50%;
   border: 2px solid var(--grey);
-  background-image: url(/imgs/SwimLessons.jpeg);
   background-size: cover;
   background-position: 100% 0;
   background-repeat: no-repeat;
   height: auto;
+}
+.intro-content-img.youthlessons {
+  background-image: url(/imgs/SwimLessons.jpeg);
+}
+.intro-content-img.lapswim {
+  background-image: url(/imgs/SwimTeamKid.jpeg);
 }
 
 .content-block {
@@ -301,9 +311,10 @@ ul li a {
 .content-block-bottom {
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   height: auto;
   padding-top: 20px;
+  gap: 20px;
 }
 
 .session-content {
@@ -376,8 +387,8 @@ ul li a {
   height: auto;
 }
 .lessons-faqs{
-width: 100%;
-height: 800px;
+  width: 100%;
+  max-height: 800px;
     display: flex;
     justify-content: flex-start;
     align-items: start;
@@ -386,6 +397,7 @@ height: 800px;
      overflow: hidden;
      gap: 20px;
 }
+
 .questions-content{
     width: 100%;
     height: auto;
@@ -395,6 +407,13 @@ height: 800px;
     flex-direction: column;
     text-align: start;
      overflow: hidden;
-     margin-bottom: 20px;
+     margin-bottom: 50px;
 
 }
+
+.program-card h3{
+  color: var(--purple);
+}
+
+
+
