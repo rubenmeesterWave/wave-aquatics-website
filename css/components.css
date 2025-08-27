@@ -2,9 +2,9 @@
 
 /* ========== Navbar ========== */
 .navbar {
-  height: 10%;
+  height: 15%;
   width: 100%;
-  padding: 0 50px;
+  padding: 0 100px;
   background: var(--purple);
   display: flex;
   align-items: center;
@@ -41,6 +41,7 @@
   align-items: center;
   gap: 5px;
   transition: color 0.3s ease;
+  /* font-size: 1.25rem; */
 }
 
 /* Hover underline effect */
