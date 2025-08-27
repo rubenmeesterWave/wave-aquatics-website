@@ -73,7 +73,7 @@
   height: 100vh;
   width: 100%;
   display: flex;
-  background-image: url(/imgs/BackgroundWaves.png);
+  background-image: url("../imgs/BackgroundWaves.png");
   background-size: cover;      
   background-position: center;  
   background-repeat: no-repeat; 
@@ -91,7 +91,7 @@
 .programs-img{
     height: 45%;
     width: 100%;
-    background-image: url(/imgs/SwimKid4.png);
+    background-image: url("../imgs/SwimKid4.png");
     background-size: cover;      
     background-position: center;  
     background-repeat: no-repeat; 
@@ -157,10 +157,10 @@
   border-radius: 8px 8px 0 0;
 }
 .news-item-img.one{
-  background-image: url(/imgs/SwimKid2.jpg);
+  background-image: url("../imgs/SwimKid2.jpg");
 }
 .news-item-img.two{
-  background-image: url(/imgs/SwimTeamKid.jpeg);
+  background-image: url("../imgs/SwimTeamKid.jpeg");
 }
 
 /* ========== Schedule ========== */
@@ -276,7 +276,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/imgs/SwimTeamKid.jpeg);
+    background-image: url("../imgs/SwimTeamKid.jpeg");
     background-size: cover;      
     background-position: center;  
     background-repeat: no-repeat; 
@@ -348,7 +348,7 @@
     justify-content: center;
     align-items: center;
     padding:0 50px ;
-    background-image: url(/imgs/SwimKid4.png);
+    background-image: url("../imgs/SwimKid4.png");
     background-size: cover;      
     background-position: center;  
     background-repeat: no-repeat; 
@@ -484,7 +484,7 @@
 .newsletter-logo{
     height: 80%;
     width: 80%;
-    background-image: url(/imgs/Wave-Logo-Purple.png);
+    background-image: url("../imgs/Wave-Logo-Purple.png");
     background-size: 80%;      
     background-position: center;  
     background-repeat: no-repeat; 
@@ -638,16 +638,16 @@ footer{
     background-repeat: no-repeat; 
 }
 .program-card-img.youthlessons{
-    background-image: url(/imgs/SwimLessons.jpeg);
+    background-image: url("../imgs/SwimLessons.jpeg");
 }
 .program-card-img.lapswim{
-    background-image: url(/imgs/SwimTeamKid.jpeg);
+    background-image: url("../imgs/SwimTeamKid.jpeg");
 }
 .program-card-img.swimkidone{
-    background-image: url(/imgs/SwimKid2.jpg);
+    background-image: url("../imgs/SwimKid2.jpg");
 }
 .program-card-img.swimkidtwo{
-    background-image: url(/imgs/SwimKid4.png);
+    background-image: url("../imgs/SwimKid4.png");
 }
 .program-card-content{
     height: 60%;
@@ -675,7 +675,7 @@ footer{
 .rental-img{
     height: 50%;
     width: 50%;
-    background-image: url(/imgs/rentalsQR.png);
+    background-image: url("../imgs/rentalsQR.png");
     background-size: 80%;      
     background-position: center;  
     background-repeat: no-repeat; 
