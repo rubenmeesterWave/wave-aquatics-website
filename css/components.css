@@ -192,13 +192,20 @@
 
     .accordion-content.open {
       padding:0 1rem;
+      max-height: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
       
     }
 
     .accordion-content p {
-  margin: 0 0 1rem; /* spacing below paragraph */
+      margin: 0 0 1rem; 
+      max-width: 90%;
     }
-
+    .accordion-content ol li  {
+      margin-left: 1rem; 
+    }
   .accordion-content.open a.btn.hollow {
   display: inline-block;
   margin-bottom:2rem;

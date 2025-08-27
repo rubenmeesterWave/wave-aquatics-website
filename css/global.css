@@ -48,6 +48,7 @@ body {
 .btn.white { background-color: var(--white); color: var(--black); border: 2px solid var(--white); }
 .btn.purple { background-color: var(--purple); color: var(--white); border: 2px solid var(--purple); }
 .btn.hollow { background-color: transparent; color: var(--black); border: 2px solid var(--black); }
+.btn.hollowpurple { background-color: transparent; color: var(--purple); border: 2px solid var(--purple); }
 
 /* Hover effects */
 .btn.white:hover { background-color: transparent; color: var(--white); border-color: var(--white); }
@@ -62,7 +63,11 @@ ul {
 ul li a {
   text-decoration: none;
 }
-
+hr{
+   border: none;
+  border-top: 1px solid #ccc;
+  margin: 1rem 1.5rem 1rem 0;
+}
 /* ========== Programs Page Formatting ========== */
 
 .program-hero {

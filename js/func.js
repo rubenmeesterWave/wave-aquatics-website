@@ -2,6 +2,7 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  
   const toggles = document.querySelectorAll('.dropdown-toggle');
 
   toggles.forEach(toggle => {
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         toggle.classList.add('open');
       }
     });
+
   });
 
   // Close on outside click
@@ -40,6 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   
+  /* ========== FAQ Sidebar Active Link ========== */
+  const sidebarLinks = document.querySelectorAll('.faq-sidebar a');
+
+  sidebarLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      sidebarLinks.forEach(l => l.classList.remove('active')); // remove all active
+      this.classList.add('active'); // add active to clicked link
+    });
+  });
 });
 
 
@@ -67,19 +78,7 @@ headers.forEach(header => {
 
 
 /* ========== ScheduleList Preview========== */
-//  "Monday": [ 
-    
-  //   { name: "  Deep End Lap Swim", time: "6:30am – 7:45am, 9:30am – 11:00am, 8:45pm – 9:45pm" }, 
-  //   { name: "Shallow End Lap Swim", time: "5:15am – 6:15am, 2:00pm – 3:00pm" }, 
-  //   { name: "Family Swim", time: "2:00pm – 3:45pm" }, 
-  //   { name: "Senior Swim", time: "1:00pm – 2:00pm" }, 
-  //   { name: "Deep Water Aerobics", time: "9:00am – 10:00am" }, 
-  //   { name: "Shallow Water Aerobics", time: "7:20am – 8:20am" }, 
-  //   { name: "LW Masters", time: "5:15am – 6:30am, 11:45am – 1:00pm" }, 
-  //   { name: "Youth Swim Lessons", time: "5:25pm – 8:30pm" }, 
-  //   { name: "Summer Swim Lessons", time: "9:00am – 12:00pm" }, 
-  //   { name: "Adult Swim Lessons", time: "8:30pm – 9:30pm" }, 
-  // ], 
+
 
 const scheduleData = {
   "Monday": {
@@ -316,6 +315,4 @@ document.querySelectorAll('.location-selector button').forEach(btn => {
     setLocation(btn.dataset.location, btn);
   });
 });
-
-
 
