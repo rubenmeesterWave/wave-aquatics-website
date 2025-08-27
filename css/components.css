@@ -4,7 +4,7 @@
 .navbar {
   height: 15%;
   width: 100%;
-  padding: 0 100px;
+  padding: 0 50px;
   background: var(--purple);
   display: flex;
   align-items: center;
@@ -16,8 +16,8 @@
 }
 
 .navbar-logo img {
-  height: 80px;
-  width: 500px;
+  height: 70px;
+  width: 400px;
 }
 
 .nav-navigation {
