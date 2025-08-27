@@ -2,7 +2,7 @@
 
 /* ========== Landing Page ========== */
 .hero{
-    height: 90vh;
+    height: 95vh;
     width: 100%;
 }
 .nav-format-fill{ /* just here to fill space at top missing by navbar */
@@ -20,7 +20,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   padding:100px 50px 0 100px ;
+   padding:100px 50px 0 50px ;
    text-align: start;
 }
 .hero-cta-top, .hero-bottom{
@@ -38,15 +38,15 @@
     justify-content: space-between;
 }
 .hero-info-top{
-    height: 20%;
+    height: 25%;
     width: 100%;
     display: flex;
     justify-content: end;
 }
 .hero-info-bottom{
-    height: 60%;
+    height: 65%;
     width: 100%;
-    padding: 20px 50px;
+    padding: 20px 10px;
     display: flex;
     justify-content: end;
     align-items: end;

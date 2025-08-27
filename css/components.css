@@ -41,6 +41,7 @@
   align-items: center;
   gap: 5px;
   transition: color 0.3s ease;
+  font-size: 14px;
 }
 
 /* Hover underline effect */
