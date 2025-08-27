@@ -2,7 +2,7 @@
 
 /* ========== Navbar ========== */
 .navbar {
-  height: 15%;
+  height: 100px;
   width: 100%;
   padding: 0 50px;
   background: var(--purple);
@@ -16,8 +16,8 @@
 }
 
 .navbar-logo img {
-  height: 70px;
-  width: 400px;
+  height: 50px;
+  width: 300px;
 }
 
 .nav-navigation {
@@ -42,6 +42,7 @@
   gap: 5px;
   transition: color 0.3s ease;
   font-size: 14px;
+  font-weight: 600;
 }
 
 /* Hover underline effect */

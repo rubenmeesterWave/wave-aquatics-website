@@ -2,7 +2,7 @@
 
 /* ========== Landing Page ========== */
 .hero{
-    height: 95vh;
+    height: 90vh;
     width: 100%;
 }
 .nav-format-fill{ /* just here to fill space at top missing by navbar */
@@ -20,7 +20,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   padding:100px 50px 0 50px ;
+   padding:50px 20px 0 50px ;
    text-align: start;
 }
 .hero-cta-top, .hero-bottom{
@@ -77,7 +77,8 @@
   background-size: cover;      
   background-position: center;  
   background-repeat: no-repeat; 
-  padding: 50px 100px 0 50px;
+  padding: 50px 50px 0 50px ;
+  gap: 20px;
 }
 .programs-right{
     height: 90%;
@@ -103,8 +104,8 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-  padding:0 20px  0 50px ;
-    text-align: start;
+/* padding-right: 50px;    */
+ text-align: start;
     overflow: hidden;
     /* gap: 20px; */
 }
@@ -129,19 +130,18 @@
 }
 .announcements-box-container{
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-between;
   width: 100%;
 }
 .news-item {
-  height: 250px;
-  width: 700px;
+  height: 200px;
+  width: 600px;
   padding: 20px;
   display: flex;
   flex-direction: column;      
   justify-content: center;     
   align-items: center;         
-  gap: 15px;                   
+  gap: 10px;                   
   text-align: center;         
   border-radius: 0 0 8px 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
@@ -149,8 +149,8 @@
   box-sizing: border-box;
 }
 .news-item-img{
-  height: 300px;
-  width: 700px;
+  height: 250px;
+  width: 600px;
   background-size: cover;      
   background-position: center;  
   background-repeat: no-repeat; 
@@ -165,7 +165,7 @@
 
 /* ========== Schedule ========== */
 .schedule{
-    height: 125vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     
@@ -174,18 +174,21 @@
   height: 100%;
   width: 50%;
   padding:0 20px  0 50px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .schedule-section {  
-    border-radius: 16px; 
     padding-top: 20px;
     /* padding: 20px 50px 0 0;  */
     max-width: 900px; 
-    margin: auto; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;    
 } 
 .section-title { 
     text-align: center; 
     font-size: 2rem; 
-    margin-bottom: 1.5rem; 
     color: var(--purple); 
 } 
 .location-selector{
@@ -193,14 +196,12 @@
     justify-content: center; 
     gap: 0.5rem; 
     flex-wrap: wrap; 
-    margin-bottom: 1rem; 
 }
 .day-selector { 
     display: flex; 
     justify-content: center; 
     gap: 0.5rem; 
     flex-wrap: wrap; 
-    margin-bottom: 1rem; 
 } 
 .day-selector button { 
     background: var(--white); 
@@ -261,10 +262,11 @@
 .schedule-right{
     height: 100%;
     width: 50%;
-    background-image: url(/imgs/SwimKid2.jpg);
+    padding: 20px 0 20px 50px;
+    /* background-image: url(/imgs/SwimKid2.jpg);
     background-size: cover;      
     background-position: center;  
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;  */
 }
 
 /* ========== About ========== */
@@ -300,7 +302,7 @@
 
 /* ========== Get Started ========== */
 .get-started{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background-color: var(--purple);
     display: flex;
@@ -363,7 +365,7 @@
 .signup-steps-container {
   display: flex;
   flex-direction: column; 
-  gap: 20px;
+  gap: 10px;
   
 }
 
@@ -393,7 +395,7 @@
   min-height: 350px;
   
   background-color: var(--white);
-  padding: 25px 20px;
+  padding: 10px;
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -459,7 +461,7 @@
 
 /* ========== Newsletter ========== */
 .newsletter{
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     display: flex;
   padding:0  100px ;
@@ -515,7 +517,7 @@ footer{
     height: 60vh;
     width: 100%;
     background-color: var(--black);
-  padding:0 100px ;
+  padding:0 50px ;
 }
 .footer-top{
     height: 80%;
@@ -537,8 +539,8 @@ footer{
     gap: 20px;
 }
 .footer-logo img{
-  height: 70px;
-  width: 400px;
+  height: 50px;
+  width: 300px;
   
 }
 .footer-links{
@@ -549,7 +551,7 @@ footer{
   justify-content: start;
   align-items: start;
   text-align: start;
-  padding: 50px 20px;
+  padding: 20px;
 }
 .footer-links ul{
     list-style: none;
@@ -754,7 +756,7 @@ flex: 1;
 .program-content.faqs{
   background-image: none;
   
-
+margin-bottom: 70px;
 }
 .intro-content.faqs {
   width: 100%;

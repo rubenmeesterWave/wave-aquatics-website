@@ -7,10 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   toggles.forEach(toggle => {
     toggle.addEventListener('click', (e) => {
-      e.preventDefault(); // prevent link jump
+      e.preventDefault(); 
       const dropdown = toggle.nextElementSibling;
 
-      // Close other dropdowns
       document.querySelectorAll('.dropdown-content').forEach(menu => {
         if (menu !== dropdown) {
           menu.style.display = 'none';
@@ -18,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      // Toggle this dropdown
       if (dropdown.style.display === 'flex') {
         dropdown.style.display = 'none';
         toggle.classList.remove('open');
@@ -30,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   });
 
-  // Close on outside click
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.dropdown')) {
       document.querySelectorAll('.dropdown-content').forEach(menu => {
@@ -47,8 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sidebarLinks.forEach(link => {
     link.addEventListener('click', function() {
-      sidebarLinks.forEach(l => l.classList.remove('active')); // remove all active
-      this.classList.add('active'); // add active to clicked link
+      sidebarLinks.forEach(l => l.classList.remove('active')); 
+      this.classList.add('active'); 
     });
   });
 });
@@ -63,15 +60,13 @@ headers.forEach(header => {
     const content = header.nextElementSibling;
 
     if (content.classList.contains("open")) {
-      // Close this section
       content.style.maxHeight = null;
       content.classList.remove("open");
       header.classList.remove("active");
     } else {
-      // Open this section
       content.classList.add("open");
       header.classList.add("active");
-      content.style.maxHeight = content.scrollHeight + "px"; // dynamic height
+      content.style.maxHeight = content.scrollHeight + "px"; 
     }
   });
 });
@@ -241,13 +236,12 @@ const scheduleData = {
  
 
 
-   let currentLocation = "Redmond"; // default location
+   let currentLocation = "Redmond"; 
 
 function showSchedule(day, button = null) {
   const buttons = document.querySelectorAll('.day-selector button');
   buttons.forEach(btn => btn.classList.remove('active'));
 
-  // Highlight clicked day button
   if (button) button.classList.add('active');
 
   const list = document.getElementById("schedule-list");
@@ -273,40 +267,34 @@ function setLocation(location, button = null) {
 
   if (button) button.classList.add('active');
 
-  // Refresh schedule for currently active day
   const activeDay = document.querySelector('.day-selector button.active');
   if (activeDay) {
     showSchedule(activeDay.dataset.day, activeDay);
   } else {
-    showSchedule('Monday'); // default fallback
+    showSchedule('Monday'); 
   }
 }
 
-// Attach click events to day buttons
 document.querySelectorAll('.day-selector button').forEach(btn => {
   btn.addEventListener('click', () => {
     showSchedule(btn.dataset.day, btn);
   });
 });
 
-// Attach click events to location buttons
 document.querySelectorAll('.location-selector button').forEach(btn => {
   btn.addEventListener('click', () => {
     setLocation(btn.dataset.location, btn);
   });
 });
 
-// Show Monday by default and set active button
 const mondayButton = document.querySelector('.day-selector button[data-day="Monday"]');
 if (mondayButton) {
   showSchedule('Monday', mondayButton);
 }
 
-// Set default location active button
 const defaultLocationBtn = document.querySelector('.location-selector button[data-location="Redmond"]');
 if (defaultLocationBtn) defaultLocationBtn.classList.add('active');
 
-// Add active class to Monday button by default
 document.querySelector('.day-selector button[data-day="Monday"]').classList.add('active');
 
 document.querySelectorAll('.location-selector button').forEach(btn => {
