@@ -15,7 +15,7 @@
   display: flex;
 }
 .main-left{
-   height: 90%;
+   height: 83.5%;
    width: 50%;
    display: flex;
    justify-content: center;
@@ -27,7 +27,7 @@
     padding: 20px 0;
 }
 .main-right{
-    height: 90%;
+   height: 83.5%;
     width: 50%;
     background-image: url(/imgs/SwimKid.png);
     background-size: cover;      
@@ -535,12 +535,12 @@ footer{
     align-items: start;
     text-align: start;
     padding: 20px 0;
+    gap: 20px;
 }
 .footer-logo img{
   height: 80px;
   width: 500px;
-  position: relative;
-  left: -90px;
+  
 }
 .footer-links{
   height: 100%;
@@ -550,7 +550,7 @@ footer{
   justify-content: start;
   align-items: start;
   text-align: start;
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 .footer-links ul{
     list-style: none;
@@ -565,6 +565,9 @@ footer{
     text-decoration: none;
     margin: 5px 0;
 }
+.footer-links a:hover{
+  color: var(--purple);
+}
 .footer-contact{
    height: 100%;
    width: 40%;
@@ -573,7 +576,7 @@ footer{
    justify-content: start;
    align-items: start;
    text-align: start;
-   padding: 50px 0;
+   padding: 50px 20px;
 }
 .footer-bottom{
     height: 20%;
