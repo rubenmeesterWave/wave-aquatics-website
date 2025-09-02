@@ -3,30 +3,30 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   
-  const toggles = document.querySelectorAll('.dropdown-toggle');
+  // const toggles = document.querySelectorAll('.dropdown-toggle');
 
-  toggles.forEach(toggle => {
-    toggle.addEventListener('click', (e) => {
-      e.preventDefault(); 
-      const dropdown = toggle.nextElementSibling;
+  // toggles.forEach(toggle => {
+  //   toggle.addEventListener('click', (e) => {
+  //     e.preventDefault(); 
+  //     const dropdown = toggle.nextElementSibling;
 
-      document.querySelectorAll('.dropdown-content').forEach(menu => {
-        if (menu !== dropdown) {
-          menu.style.display = 'none';
-          menu.previousElementSibling.classList.remove('open');
-        }
-      });
+  //     document.querySelectorAll('.dropdown-content').forEach(menu => {
+  //       if (menu !== dropdown) {
+  //         menu.style.display = 'none';
+  //         menu.previousElementSibling.classList.remove('open');
+  //       }
+  //     });
 
-      if (dropdown.style.display === 'flex') {
-        dropdown.style.display = 'none';
-        toggle.classList.remove('open');
-      } else {
-        dropdown.style.display = 'flex';
-        toggle.classList.add('open');
-      }
-    });
+  //     if (dropdown.style.display === 'flex') {
+  //       dropdown.style.display = 'none';
+  //       toggle.classList.remove('open');
+  //     } else {
+  //       dropdown.style.display = 'flex';
+  //       toggle.classList.add('open');
+  //     }
+  //   });
 
-  });
+  // });
 
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.dropdown')) {
