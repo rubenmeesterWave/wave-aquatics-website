@@ -199,6 +199,7 @@ hr{
   display: flex;
   justify-content: center;
   height: auto;
+  padding-top: 20px;
 }
 
 .program-content-right h2 {
