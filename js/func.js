@@ -28,16 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // });
 
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.dropdown')) {
-      document.querySelectorAll('.dropdown-content').forEach(menu => {
-        menu.style.display = 'none';
-      });
-      document.querySelectorAll('.dropdown-toggle').forEach(btn => {
-        btn.classList.remove('open');
-      });
-    }
-  });
+  // document.addEventListener('click', (e) => {
+  //   if (!e.target.closest('.dropdown')) {
+  //     document.querySelectorAll('.dropdown-content').forEach(menu => {
+  //       menu.style.display = 'none';
+  //     });
+  //     document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+  //       btn.classList.remove('open');
+  //     });
+  //   }
+  // });
   
   /* ========== FAQ Sidebar Active Link ========== */
   const sidebarLinks = document.querySelectorAll('.faq-sidebar a');
