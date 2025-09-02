@@ -600,7 +600,7 @@ footer{
   background: none;
   height: auto;
   width: 80%;
-  padding: 50px 50px 50px 0;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -622,8 +622,8 @@ footer{
    gap: 20px; 
 }
 .program-card{
-    height: 800px;
-    width: 40%;
+    height: 900px;
+    width: 45%;
     box-sizing: border-box;
 }
 .program-card-img{
@@ -657,7 +657,7 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 50%;
+  height: 60%;
 }
 .program-details span{
   display: flex;
