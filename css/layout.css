@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 20px 0 50px;
+  padding: 0 20px 0 50px;
   text-align: start;
 }
 
@@ -28,50 +28,16 @@
 }
 
 .main-right {
-  height: 90%;
+  height: 100%;
   width: 50%;
   background-image: url("../imgs/hero-img.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  
 }
 
-.hero-info-top {
-  height: 25%;
-  width: 100%;
-  display: flex;
-  justify-content: end;
-}
 
-.hero-info-bottom {
-  height: 65%;
-  width: 100%;
-  padding: 20px 10px;
-  display: flex;
-  justify-content: end;
-  align-items: end;
-}
-
-.hours-container {
-  background-color: rgba(255, 255, 255, 0.8);
-  height: 60%;
-  padding: 10px 100px 10px 10px;
-}
-
-.location-container {
-  background-color: rgba(255, 255, 255, 0.8);
-  height: 100%;
-  width: 50%;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
 /* ========== Programs ========== */
 .programs{
   height: 100vh;
@@ -95,9 +61,9 @@
 .programs-img{
     height: 45%;
     width: 100%;
-    background-image: url("../imgs/SwimKid4.png");
+    background-image: url("../imgs/guarding-nine.jpg");
     background-size: cover;      
-    background-position: center;  
+    background-position:50% 30%;  
     background-repeat: no-repeat; 
     margin-top: 10px;
 }
@@ -161,10 +127,11 @@
   border-radius: 8px 8px 0 0;
 }
 .news-item-img.one{
-  background-image: url("../imgs/SwimKid2.jpg");
+  background-image: url("../imgs/instructor-two.jpg");
+  background-position: 100% 70%;
 }
 .news-item-img.two{
-  background-image: url("../imgs/SwimTeamKid.jpeg");
+  background-image: url("../imgs/scenery-three.jpg");
 }
 
 /* ========== Schedule ========== */
@@ -178,9 +145,9 @@
   height: 100%;
   width: 50%;
   padding:0 20px  0 50px ;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 .schedule-section {  
     padding-top: 20px;
@@ -272,7 +239,10 @@
     background-position: center;  
     background-repeat: no-repeat;  */
 }
-
+.programs-img.schedule{
+  background-image: url("../imgs/guarding-ten.jpg");
+  height: 40%;
+}
 /* ========== About ========== */
 .about{
     height: 70vh;
@@ -280,7 +250,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../imgs/SwimTeamKid.jpeg");
+    background-image: url("../imgs/guarding-nineteen.jpg");
     background-size: cover;      
     background-position: center;  
     background-repeat: no-repeat; 
@@ -352,9 +322,9 @@
     justify-content: center;
     align-items: center;
     padding:0 50px ;
-    background-image: url("../imgs/SwimKid4.png");
-    background-size: cover;      
-    background-position: center;  
+    background-image: url("../imgs/scenery-four.jpg");
+    background-size: 120%;      
+    background-position: right;  
     background-repeat: no-repeat; 
 }
 
@@ -615,63 +585,91 @@ footer{
   align-items: start;
   gap: 20px;
 }
-.intro-content-programs{
-  width: 100%;
+
+ .intro-content-programs {
+  text-align: start;
+  margin-bottom: 40px;
+}
+
+
+.program-card-container {
+  display: grid;
+    display: grid;
+  grid-template-columns: repeat(2, 1fr); /* always two cards per row */
+  gap: 30px;
+}
+.program-card {
   display: flex;
-  justify-content: start;
-  align-items: start;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.program-card-container{
-   width: 100%;
-   display: flex;
-   flex-wrap: wrap; 
-   justify-content: start; 
-   align-items: flex-start; 
-   gap: 20px; 
+
+ .program-card-img {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
 }
-.program-card{
-    height: 900px;
-    width: 45%;
-    box-sizing: border-box;
-}
-.program-card-img{
-    height: 40%;
-    width: 100%;
-    background-size: cover;      
-    background-position: center;  
-    background-repeat: no-repeat; 
-}
-.program-card-img.youthlessons{
-    background-image: url("../imgs/SwimLessons.jpeg");
-}
-.program-card-img.lapswim{
-    background-image: url("../imgs/SwimTeamKid.jpeg");
-}
-.program-card-img.swimkidone{
-    background-image: url("../imgs/SwimKid2.jpg");
-}
-.program-card-img.swimkidtwo{
-    background-image: url("../imgs/SwimKid4.png");
-}
-.program-card-content{
-    height: 60%;
-    width: 100%;
+.program-card-content {
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between; 
     gap: 20px;
-    text-align: start;
+    padding: 0 20px 10px 20px;
 }
-.program-details{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 60%;
+
+.program-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    flex-grow: 1; 
 }
-.program-details span{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+
+.program-details span {
+    flex-grow: 1; 
 }
+
+.program-details p {
+  font-size: 14px;
+}
+
+.program-card-img.youthlessons{
+    background-image: url("../imgs/instructor-four.jpg");
+    background-size: 140%;      
+
+}
+.program-card-img.lapswim{
+    background-image: url("../imgs/guarding-eleven.jpg");
+}
+.program-card-img.familyswim{
+    background-image: url("../imgs/guarding-fifteen.jpg");
+}
+.program-card-img.swimteam{
+    background-image: url("../imgs/swimteam.jpg");
+    background-position: 50% 30%;
+}
+.program-card-img.wateraerobics{
+    background-image: url("../imgs/guarding-eight.jpg");
+}
+.program-card-img.adultlessons{
+    background-image: url("../imgs/guarding-two.jpg");
+        background-position: 50% 30%;
+
+}
+.program-card-img.summerlessons{
+    background-image: url("../imgs/instructor-three.jpg");
+}
+.program-card-img.parentandchild{
+    background-image: url("../imgs/instructor-six.jpg");
+        background-position: 50% 40%;
+
+}
+
 
 /* ========== Rentals ========== */
 

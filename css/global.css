@@ -76,14 +76,21 @@ hr{
 
 .program-hero {
   position: relative;
-  height: 30vh;
+  height: 40vh;
   width: 100%;
-  background-image: url("../imgs/SwimTeamKid.jpeg");
+  background-image: url("../imgs/swimteam.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 100% 32%;
   background-repeat: no-repeat;
 }
-
+.program-hero.youthlessons{
+    background-image: url("../imgs/instructor-four.jpg");
+      background-position: center;
+}
+.program-hero.programming{
+    background-image: url("../imgs/guarding-six.jpg");
+      background-position: 50% 40%;
+}
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -115,7 +122,7 @@ hr{
   justify-content: space-between;
   height: auto; 
   padding:20px  50px ;
-  background-image: url(/imgs/BackgroundWaves.png);
+  background-image: url("../imgs/BackgroundWaves.png");
   background-size: cover;
   background-position: 100% ;
   background-repeat: no-repeat;
@@ -236,19 +243,18 @@ hr{
 
 .intro-content-img {
   width: 30%;
-  border: 2px solid var(--grey);
-  background-size: cover;
-  background-position: 100% 0;
+  background-size: 140%;
+  background-position: center;
   background-repeat: no-repeat;
   height: 80%;
 }
 
 .intro-content-img.youthlessons {
-  background-image: url(/imgs/SwimLessons.jpeg);
+  background-image: url(../imgs/instructor-three.jpg);
 }
 
 .intro-content-img.lapswim {
-  background-image: url(/imgs/SwimTeamKid.jpeg);
+  background-image: url(../imgs/guarding-twenty.jpg);
 }
 
 .content-block {
@@ -278,11 +284,6 @@ hr{
 
 .content-block-right {
   width: 50%;
-  border: 2px solid var(--grey);
-  background-image: url(/imgs/SwimLessons2.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: auto;
 }
 
@@ -330,14 +331,18 @@ hr{
 }
 .lessons-content-img {
   width: 50%;
-  border: 2px solid var(--grey);
-  background-image: url(/imgs/SwimKid.png);
+  background-image: url(../imgs/diving-board-one.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
 }
+.lessons-content-img.youthlessons{
+  background-image: url(../imgs/instructor-one.jpg);
+  background-size: 200%;
 
+
+}
 .lessons-schedule {
   width: 50%;
   display: flex;
