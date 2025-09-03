@@ -5,6 +5,14 @@
   box-sizing: border-box;
   letter-spacing: 1px;
 }
+body {
+   margin: 0;
+  padding-top: 135px;
+
+  /* font-family: 'Satoshi', sans-serif; */
+  font-family: 'Karla', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
 
 /* Brand Colors */
 :root {
@@ -27,11 +35,7 @@
   --color-danger: #dc3545;
 }
 
-body {
-  /* font-family: 'Satoshi', sans-serif; */
-  font-family: 'Karla', sans-serif;
-  font-family: 'Poppins', sans-serif;
-}
+
 
 .btn {
   padding: 10px 14px; 
@@ -72,8 +76,7 @@ hr{
 
 .program-hero {
   position: relative;
-  margin-top: 100px;
-  height: 40vh;
+  height: 30vh;
   width: 100%;
   background-image: url("../imgs/SwimTeamKid.jpeg");
   background-size: cover;
