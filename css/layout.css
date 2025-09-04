@@ -377,7 +377,18 @@
   position: relative;
   z-index: 1;
 }
+.sign-up-step-icon{
+  height: 50px;
+  width: 50px;
+    background-size: cover;      
+    background-position: right;  
+    background-repeat: no-repeat; 
+}
 
+.sign-up-step-icon.one{
+background-image: url("../imgs/icons/account-icon.png");
+
+}
 .signup-step:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
