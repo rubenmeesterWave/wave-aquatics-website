@@ -1,0 +1,24 @@
+/* For tablets and up */
+@media (min-width: 768px) {
+  .navbar-menu {
+    flex-direction: row;
+  }
+}
+
+/* For laptops/desktops */
+@media (min-width: 1024px) {
+  .program-card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+  .navbar-menu {
+    flex-direction: column;
+  }
+  .program-card {
+    margin: 10px 0;
+  }
+}
+
