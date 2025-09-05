@@ -24,6 +24,7 @@
 .nav-navigation {
   display: flex;
   align-items: center;
+  z-index: 1201;
 }
 
 .navbar-menu {

@@ -2,7 +2,13 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  
+  const burger = document.getElementById("burger-menu");
+  const nav = document.getElementById("nav-navigation"); // use id for clarity
+
+ burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+  nav.classList.toggle("active");
+ });
   
   /* ========== FAQ Sidebar Active Link ========== */
   const sidebarLinks = document.querySelectorAll('.faq-sidebar a');
@@ -34,6 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Set default active tab
   tabs[0].classList.add("active");
   panels[0].classList.add("active");
+
+
+  
 });
 
 
@@ -289,4 +298,5 @@ document.querySelectorAll('.location-selector button').forEach(btn => {
     setLocation(btn.dataset.location, btn);
   });
 });
+
 

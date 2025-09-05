@@ -1,24 +1,69 @@
 /* For tablets and up */
 @media (min-width: 768px) {
-  .navbar-menu {
-    flex-direction: row;
-  }
+ 
 }
 
 /* For laptops/desktops */
 @media (min-width: 1024px) {
-  .program-card-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  
 }
 
 /* For very small phones */
 @media (max-width: 480px) {
-  .navbar-menu {
-    flex-direction: column;
+  .btn {
+    padding: 8px 12px;       /* slightly smaller padding */
+    font-size: 0.7rem;     /* reduce font size */
+    border-radius: 30px;     /* keep rounded, but smaller */
   }
-  .program-card {
-    margin: 10px 0;
+   h1 {
+    font-size: 1.75rem; /* ~60% of 4rem */
   }
+
+  h2 {
+    font-size: 1.8rem; /* ~60% of 3rem */
+    line-height: 32px; /* scale line height */
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem; /* ~73% of 1.5rem */
+    margin-top: 1rem;
+  }
+
+  h4 {
+    letter-spacing: 2px;
+    font-size: 0.9rem; 
+  }
+
+  h5 {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 8px;
+    max-width: 70%;
+  }
+
+  .hero {
+  height: auto;
+}
+  .main-right{
+    display: none;
+  }
+.main-left{
+  width: 100%;
+    align-items: start;
+
+   padding: 50px 10px 10px 10px;
+  text-align: start;
+ 
+}
+
+.main-left h1 {
+  line-height: 40px;
+}
+
+
 }
 
