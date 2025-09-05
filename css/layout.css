@@ -957,12 +957,21 @@ list-style: disc;
 /* ==========  Schedule ========== */
 
 .schedule-img {
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   background-image: url('../imgs/wave-schedule-9-5-25.avif');
   background-size: contain;      
-  background-position: center;  
+  background-position: top left;  
   background-repeat: no-repeat; 
+}
+.schedule-img.session{
+    background-image: url('../imgs/wave-session-schedule-9-5-25.avif');
+
+}
+.session-schedule-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
   /* Table Layout for Desktop */
   .schedule-table {
