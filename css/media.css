@@ -33,7 +33,7 @@
 
   h4 {
     letter-spacing: 2px;
-    font-size: 0.9rem; 
+    font-size: 0.6rem; 
   }
 
   h5 {
@@ -44,7 +44,16 @@
     font-size: 8px;
     max-width: 70%;
   }
+  .navbar {
+  padding: 0 10px;
 
+}
+
+.navbar-logo img,
+.footer-logo img {
+  height: 20px;
+  width: auto;
+}
   .hero {
   height: auto;
 }
