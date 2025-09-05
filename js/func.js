@@ -13,6 +13,27 @@ document.addEventListener('DOMContentLoaded', () => {
       this.classList.add('active'); 
     });
   });
+
+  /* ========== Class Descriptions Tabs ========== */
+
+  const tabs = document.querySelectorAll(".tab-button");
+  const panels = document.querySelectorAll(".tab-panel");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      const targetPanel = document.getElementById(tab.dataset.tab);
+
+      tabs.forEach(t => t.classList.remove("active"));
+      panels.forEach(p => p.classList.remove("active"));
+
+      tab.classList.add("active");
+      targetPanel.classList.add("active");
+    });
+  });
+
+  // Set default active tab
+  tabs[0].classList.add("active");
+  panels[0].classList.add("active");
 });
 
 

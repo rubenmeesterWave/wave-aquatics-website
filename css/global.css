@@ -72,6 +72,9 @@ hr{
   border-top: 1px solid #ccc;
   margin: 1rem 1.5rem 1rem 0;
 }
+.purple-text{
+  color: var(--purple);
+}
 /* ========== Programs Page Formatting ========== */
 
 .program-hero {
@@ -141,14 +144,25 @@ hr{
 
 .program-content-right {
   width: 80%;
-  padding-left: 20px;
+  padding-left: 50px;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
   gap: 50px;
 }
+.program-content-right.full ul{
+  list-style: disc;
+}
+.program-content-right.full ul li, ol li{
+  margin:0 0 5px 20px;
+}
 
+.poolrules-content-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .related-pages {
   width: 100%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -211,7 +225,12 @@ hr{
   height: auto;
   padding-top: 20px;
 }
-
+.intro-content-text.full{
+width: 100%;
+}
+.intro-content-text.full p{
+  max-width: 90%;
+}
 .program-content-right h2 {
   color: var(--purple);
 }

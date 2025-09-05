@@ -46,6 +46,7 @@
   font-weight: 600;
 }
 
+/* Navbar underline for non-dropdown links */
 .navbar-menu > li:not(.dropdown) > a::after {
   content: '';
   position: absolute;
@@ -63,14 +64,11 @@
   transform: scaleX(1);
 }
 
-.dropdown-content li a::after {
-  content: none;
-}
-
 .dropdown {
   position: relative;
 }
 
+/* Base dropdown */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -90,26 +88,17 @@
   display: flex;
 }
 
+/* Dropdown links */
 .dropdown-content li a {
-  padding: 12px 16px;
   display: block;
   color: var(--black);
   font-size: 14px;
   font-weight: 500;
-  transition: ease-in-out 0.3s;
+  padding: 12px 16px;
+  transition: color 0.3s ease-in-out;
 }
 
-
-
-.dropdown-arrow {
-  transition: transform 0.3s ease;
-  stroke: var(--white);
-}
-
-.dropdown:hover .dropdown-arrow {
-  transform: rotate(180deg);
-}
-/* Mega menu base */
+/* Mega menu */
 .dropdown-content.mega-menu {
   display: none;
   position: absolute;
@@ -119,8 +108,7 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  flex-direction: row;   
-  /* gap: 20px; */
+  flex-direction: row;
   min-width: 800px;      
 }
 
@@ -128,30 +116,31 @@
   display: flex;
 }
 
-/* Each column */
+/* Columns in mega menu */
 .dropdown-column {
-  flex: 1;  
+  flex: 1;
 }
-
 
 .dropdown-column h4 {
   font-size: 14px;
   font-weight: 700;
   color: var(--purple);
   text-decoration: underline solid var(--grey);
-  text-decoration-thickness: 1px; 
-  text-underline-offset: 6px;     
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
   margin-bottom: 10px;
 }
+
 .dropdown-column ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+/* Dropdown link underline effect */
 .dropdown-column li a {
-  position: relative;         /* for ::after positioning */
-  display: inline-block;      /* makes width match text */
+  position: relative;  /* for ::after positioning */
+  display: inline-block; /* width matches text */
   text-decoration: none;
   color: var(--black);
   font-size: 14px;
@@ -160,21 +149,19 @@
   transition: color 0.3s ease;
 }
 
-/* Underline effect */
 .dropdown-column li a::after {
   content: '';
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;                /* exactly matches text width */
-  height: 2px;                /* underline thickness */
+  width: 100%;
+  height: 2px;
   background: var(--purple);
-  transform: scaleX(0);       /* start hidden */
+  transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
 }
 
-/* Hover state */
 .dropdown-column li a:hover {
   color: var(--purple);
 }
@@ -183,7 +170,19 @@
   transform: scaleX(1);
 }
 
-/* Utility Bar */
+/* Dropdown arrows */
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+  stroke: var(--white);
+}
+
+.dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+
+/* ========== Utility Bar ========== */
+
 .utility-bar {
   height: 35px;
   width: 100%;
