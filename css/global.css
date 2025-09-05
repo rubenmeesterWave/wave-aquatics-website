@@ -295,6 +295,11 @@ hr{
   padding-top: 20px;
   gap: 20px;
 }
+.program-pricing{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 .session-content {
   width: 100%;

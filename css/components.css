@@ -83,6 +83,7 @@
   z-index: 1000;
   flex-direction: column;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -98,11 +99,7 @@
   transition: ease-in-out 0.3s;
 }
 
-.dropdown-content li a:hover {
-  background: var(--purple);
-  color: var(--white);
-  border-bottom: none;
-}
+
 
 .dropdown-arrow {
   transition: transform 0.3s ease;
@@ -111,6 +108,79 @@
 
 .dropdown:hover .dropdown-arrow {
   transform: rotate(180deg);
+}
+/* Mega menu base */
+.dropdown-content.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -150px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  flex-direction: row;   
+  /* gap: 20px; */
+  min-width: 800px;      
+}
+
+.dropdown:hover .dropdown-content.mega-menu {
+  display: flex;
+}
+
+/* Each column */
+.dropdown-column {
+  flex: 1;  
+}
+
+
+.dropdown-column h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--purple);
+  text-decoration: underline solid var(--grey);
+  text-decoration-thickness: 1px; 
+  text-underline-offset: 6px;     
+  margin-bottom: 10px;
+}
+.dropdown-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-column li a {
+  position: relative;         /* for ::after positioning */
+  display: inline-block;      /* makes width match text */
+  text-decoration: none;
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+}
+
+/* Underline effect */
+.dropdown-column li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;                /* exactly matches text width */
+  height: 2px;                /* underline thickness */
+  background: var(--purple);
+  transform: scaleX(0);       /* start hidden */
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+/* Hover state */
+.dropdown-column li a:hover {
+  color: var(--purple);
+}
+
+.dropdown-column li a:hover::after {
+  transform: scaleX(1);
 }
 
 /* Utility Bar */
