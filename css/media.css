@@ -10,6 +10,7 @@
 
 /* For very small phones */
 @media (max-width: 480px) {
+ 
   .btn {
     padding: 8px 12px;       /* slightly smaller padding */
     font-size: 0.7rem;     /* reduce font size */
@@ -44,9 +45,39 @@
     font-size: 8px;
     max-width: 70%;
   }
+
+
+  .utility-bar {
+  height: 35px;
+  width: 100%;
+  display: block;
+  padding: 2px 10px;
+  gap: -40px;
+  
+}
+
+.utility-left p,
+.utility-right p {
+  margin: 0;
+  display: inline;
+  color: var(--white);
+    font-size: .3rem;
+
+}
+
+.utility-right {
+  display: block;
+  gap: 20px;
+}
+
   .navbar {
   padding: 0 10px;
+  height: 60px;
 
+}
+.navbar-menu li a {
+
+  font-size: 5px;
 }
 
 .navbar-logo img,
@@ -63,14 +94,33 @@
 .main-left{
   width: 100%;
     align-items: start;
-
    padding: 50px 10px 10px 10px;
   text-align: start;
  
 }
+.row{
+    height: auto;
+    /* gap:20px; */
+    width: 100%;
+    border-left: none;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    
+}
+.row-btn{
+    padding-bottom: 40px;
+    margin-top: 20px;
+}
 
 .main-left h1 {
   line-height: 40px;
+  width: 70%;
+}
+.main-left h4 {
+  width: 70%;
 }
 
 
