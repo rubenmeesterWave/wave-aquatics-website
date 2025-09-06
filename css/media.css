@@ -1,4 +1,4 @@
-/* For tablets and up */
+/* For tablets and up
 @media (min-width: 768px) {
  
 }
@@ -11,122 +11,7 @@
 /* For very small phones */
 @media (max-width: 480px) {
  
-  .btn {
-    padding: 8px 12px;       /* slightly smaller padding */
-    font-size: 0.7rem;     /* reduce font size */
-    border-radius: 30px;     /* keep rounded, but smaller */
-  }
-   h1 {
-    font-size: 1.75rem; /* ~60% of 4rem */
-  }
-
-  h2 {
-    font-size: 1.8rem; /* ~60% of 3rem */
-    line-height: 32px; /* scale line height */
-    margin-top: 1rem;
-    margin-bottom: 0.2rem;
-  }
-
-  h3 {
-    font-size: 1.1rem; /* ~73% of 1.5rem */
-    margin-top: 1rem;
-  }
-
-  h4 {
-    letter-spacing: 2px;
-    font-size: 0.6rem; 
-  }
-
-  h5 {
-    font-size: 0.8rem;
-  }
-
-  p {
-    font-size: 8px;
-    max-width: 70%;
-  }
-
-
-  .utility-bar {
-  height: 35px;
-  width: 100%;
-  display: block;
-  padding: 2px 10px;
   
-}
 
-.utility-left p,
-.utility-right p {
-  margin: 0;
-  display: inline;
-  color: var(--white);
-    font-size: .3rem;
-
-}
-
-.utility-right {
-  display: block;
-  gap: 20px;
-}
-
-  .navbar {
-  padding: 0 10px;
-  height: 60px;
-  max-width: 480px;
-
-}
-.navbar-menu {
-  gap: 5px;
-  margin-right: 0;
-}
-.navbar-menu li a {
-
-  font-size: 5px;
-}
-
-.navbar-logo img,
-.footer-logo img {
-  height: 20px;
-  width: auto;
-}
-
-  .hero {
-  height: auto;
-}
-  .main-right{
-    display: none;
-  }
-.main-left{
-  width: 100%;
-    align-items: start;
-  text-align: start;
- 
-}
-.row{
-    height: auto;
-    /* gap:20px; */
-    width: 100%;
-    border-left: none;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    
-}
-.row-btn{
-    padding-bottom: 40px;
-    margin-top: 20px;
-}
-
-.main-left h1 {
-  line-height: 40px;
-  width: 70%;
-}
-.main-left h4 {
-  width: 70%;
-}
-
-
-}
+} 
 
