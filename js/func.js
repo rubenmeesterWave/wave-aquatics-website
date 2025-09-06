@@ -2,13 +2,7 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const burger = document.getElementById("burger-menu");
-  const nav = document.getElementById("nav-navigation"); // use id for clarity
-
- burger.addEventListener("click", () => {
-  burger.classList.toggle("active");
-  nav.classList.toggle("active");
- });
+  
   
   /* ========== FAQ Sidebar Active Link ========== */
   const sidebarLinks = document.querySelectorAll('.faq-sidebar a');
