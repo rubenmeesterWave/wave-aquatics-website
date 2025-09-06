@@ -3,7 +3,24 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   
-  
+  const hamburger = document.getElementById('hamburger');   
+  const nav = document.querySelector('.nav-navigation');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+  dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      if (window.innerWidth < 768) { 
+        e.preventDefault();
+        const parent = toggle.parentElement;
+        parent.classList.toggle('open');
+      }
+    });
+  });
+
   /* ========== FAQ Sidebar Active Link ========== */
   const sidebarLinks = document.querySelectorAll('.faq-sidebar a');
 
@@ -36,6 +53,61 @@ document.addEventListener('DOMContentLoaded', () => {
   panels[0].classList.add("active");
 
 
+// Mobile dropdown arrow toggle
+
+dropdownToggles.forEach(toggle => {
+  toggle.addEventListener('click', (e) => {
+      if (window.innerWidth < 1230) { 
+          e.preventDefault();
+          const parent = toggle.parentElement;
+
+          // Close other open dropdowns
+          document.querySelectorAll('.dropdown.open').forEach(drop => {
+              if (drop !== parent) drop.classList.remove('open');
+          });
+
+          parent.classList.toggle('open');
+      }
+  });
+});
+
+
+dropdownToggles.forEach(toggle => {
+  toggle.addEventListener('click', (e) => {
+    // Only apply click behavior on mobile
+    if (window.innerWidth < 1230) {
+      e.preventDefault(); // <-- Prevent the link from navigating
+      const parent = toggle.parentElement;
+
+      // Close other open dropdowns
+      document.querySelectorAll('.dropdown.open').forEach(drop => {
+        if (drop !== parent) drop.classList.remove('open');
+      });
+
+      parent.classList.toggle('open');
+    }
+  });
+});
+
+// Mobile dropdown toggle
+// document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+//   toggle.addEventListener('click', (e) => {
+//       // Prevent default if link has a href
+//       e.preventDefault();
+
+//       const parentDropdown = toggle.parentElement;
+
+//       // Close other open dropdowns
+//       document.querySelectorAll('.dropdown.open').forEach(drop => {
+//           if (drop !== parentDropdown) {
+//               drop.classList.remove('open');
+//           }
+//       });
+
+//       // Toggle this dropdown
+//       parentDropdown.classList.toggle('open');
+//   });
+// });
   
 });
 
