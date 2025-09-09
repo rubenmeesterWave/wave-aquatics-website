@@ -246,6 +246,7 @@ width: 100%;
 }
 
 .content-block {
+
   width: 100%;
   gap: 20px;
   height: auto;
@@ -255,6 +256,7 @@ width: 100%;
   width: 100%;
   display: flex;
   height: auto;
+  gap: 20px;
 }
 
 .content-block-left {
