@@ -13,7 +13,8 @@
 }
 
 .main-left {
-   flex: 1 1 600px;
+   flex: 1 1 500px;
+  width: 50%;
 
   display: flex;
   justify-content: center;
@@ -27,7 +28,7 @@
 }
 
 .main-right {
- flex: 1 1 400px;
+ flex: 1 1 500px;
   width: 50%;
   background-image: url("../imgs/hero-img.jpg");
   background-size: cover;
@@ -80,7 +81,7 @@
   width: 100%;
   padding: 0.5rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
   box-sizing: border-box;
 }
 

@@ -6,7 +6,7 @@
   height: 100px;
   width: 100%;
   padding: 0 50px;
-  background: var(--purple);
+  background: var(--purple) ;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,6 +33,9 @@
   gap: 20px;
   list-style: none;
   margin-right: 20px;
+}
+.nav-dropdown-hidden{
+  display: none;
 }
 
 
@@ -258,6 +261,5 @@
       margin-left: 1rem; 
     }
   .accordion-content.open a.btn.hollow {
-  display: inline-block;
   margin-bottom:2rem;
 }

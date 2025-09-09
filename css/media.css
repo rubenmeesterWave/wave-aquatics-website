@@ -72,7 +72,9 @@
 
     }
 
-  
+  .nav-dropdown-hidden{
+  display: block;
+}
     .navbar-menu > li > a {
       width: 100%;            
       font-weight: 600;
@@ -389,51 +391,11 @@
   flex: 1 1 250px;
   
 }
+
   
 }
 
 
-
-
-/* @media (max-width: 1230px) {
-  .get-started-right {
-    display: none;
-  }
-   
-} */
-
-
-/* Responsive: stack cells on small screens */
-  /* @media (max-width: 600px) {
-    .rental-table, 
-    .rental-table tr, 
-    .rental-table td, 
-    .rental-table th {
-      display: block;
-      width: 100%;
-    }
-
-    .rental-table tr {
-      margin-bottom: 1rem;
-    }
-
-    .rental-table td {
-      text-align: left;
-      padding-left: 50%;
-      position: relative;
-    }
-
-    .rental-table td::before {
-      content: attr(data-label);
-      position: absolute;
-      left: 10px;
-      font-weight: bold;
-    }
-
-    .rental-table th {
-      display: none; /* hide header on mobile
-}
-       */
 @media (max-width: 1010px) {
   body{
     padding-top: 145px;
@@ -448,6 +410,112 @@
   top:145px ;
 }
 
+}
 
-  
+@media (max-width: 980px) {
+.intro-content-img {
+  display: none;
+}
+
+.intro-content-text {
+  width: 100%;
+ 
+}
+.related-pages-header{
+text-align: center;
+}
+ .related-pages-header h3 { 
+font-size: .8rem; 
+}
+.related-pages{
+  text-align: center;
+}
+.related-pages-list a { 
+  font-size: .8rem;
+}
+.program-content-left {
+display: none;
+}
+.intro-content-text{
+  align-items: center;
+}
+.intro-content-text ul{
+  text-align: start;
+}
+.program-content-right {
+  width: 100%;
+    align-items: center;
+    text-align: center;
+
+}
+.content-block-top{
+  flex-direction: column;
+
+}
+.content-block-left, .content-block-right{
+  width: 100%;
+}
+.program-pricing{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.lessons-faqs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.class-descriptions{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.questions-content{
+  align-items: center;
+  text-align: center;
+}
+.questions-content h2{
+  font-size: 1.5rem;
+}
+.questions-content h3{
+  font-size: .8rem;
+}
+
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .program-hero {
+    height: 35vh;
+  }
+  .lessons-content-img{
+  display: none;
+}
+.lessons-schedule{
+  width: 100%;
+  align-items: center;
+}
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+  .program-hero {
+    height: 30vh;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .program-hero {
+    height: 25vh;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .program-hero {
+    height: 20vh;
+  }
 }

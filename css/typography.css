@@ -256,8 +256,28 @@ p {
 /* ========== Buttons ========== */
 
 
-.related-pages-list a {
-  font-size: 1.25rem;
+.purple-text { 
+  color: var(--purple); 
+}
+ .related-pages-header h3 { 
+  color: var(--white);
+  margin: 0; 
+}
+.related-pages-list a { 
+  display: block; 
+  text-decoration: none; 
+  color: var(--black); 
+  background-color: var(--white); 
+  font-weight: 600; 
+  font-size: 1.25rem; 
+  padding: 15px 25px; 
+  text-align: center; 
+  transition: all 0.3s ease-in-out; 
+  border-bottom: 2px solid var(--grey); 
+} .related-pages-list a:hover { 
+  background-color: var(--purple); 
+  color: var(--white); 
+  border-color: var(--purple); 
 }
 .tab-button h3 {
   font-size: 2rem;

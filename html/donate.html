@@ -10,6 +10,9 @@
     <link rel="stylesheet" type="text/css"  href="../css/components.css">
     <link rel="stylesheet" type="text/css"  href="../css/typography.css">
 
+   <link rel="stylesheet" type="text/css"  href="../css/media.css">
+
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../imgs/logo.png">
 
@@ -23,17 +26,21 @@
       <p><strong>Hours:</strong> Mon–Fri: 6am–9:30pm | Sat–Sun: 7:30am–9:30pm</p>
     </div>
     <div class="utility-right">
-      <p><strong>Redmond:</strong> (425) 883-4422 | <strong>Juanita:</strong> (425) 936-1627</p>
+      <p><strong>Redmond:</strong> (425) 883-4422 | <strong>Kirkland:</strong> (425) 936-1627</p>
       <p><a href="mailto:waveswimschool@waveaquatics.org">waveswimschool@waveaquatics.org</a></p>
     </div>
   </div>
-  <nav class="navbar">
+    <nav class="navbar">
     <div class="navbar-logo">
       <a href="../index.html">
         <img src="../imgs/Wave-Logo.png" alt="Logo">
       </a>
     </div>
-  
+     <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <div class="nav-navigation">
       <ul class="navbar-menu">
         <li><a href="../index.html">Home</a></li>
@@ -49,14 +56,20 @@
     <div class="dropdown-column">
       <h4>About Wave Aquatics</h4>
       <ul>
+                      <li><a class="nav-dropdown-hidden" href="html/about.html">About Us</a></li>
+
       <li><a href="ourmission.html">Our Mission</a></li>
       <li><a href="meettheteam.html">Meet the Team</a></li>
+
+          <li><a href="news.html">News</a></li>
+
 
       </ul>
     </div>
     <div class="dropdown-column">
       <h4>Policies & Resources</h4>
       <ul>
+            <li><a href="contact.html">Contact Us</a></li>
         <li><a href="poolrules.html">Pool Rules</a></li>
        <li><a href="feeassistance.html">Fee Assistance</a></li>
        <li><a href="schedule.html">Our Schedule</a></li>
@@ -86,6 +99,8 @@
     <div class="dropdown-column">
       <h4>Wave Swim School</h4>
       <ul>
+               <li><a class="nav-dropdown-hidden" href="html/programs.html">Our Programs</a></li>
+
         <li><a href="youthlessons.html">Youth Lessons</a></li>
         <li><a href="adultlessons.html">Adult Lessons</a></li>
         <li><a href="summerlessons.html">Summer Lessons</a></li>
@@ -118,8 +133,7 @@
         <li><a href="https://www.gomotionapp.com/team/wave/page/home">Wave Swim Team</a></li>
         <li><a href="lwmasters.html">Masters Swim</a></li>
         <li><a href="faqs.html">FAQs</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="news.html">News</a></li>
+    
       </ul>
   
       <div class="navbar-btn">
@@ -388,8 +402,12 @@
 <footer>
   <div class="footer-top">
     <div class="footer-logo">
-      <img src="../imgs/Wave-Logo.png" alt="Logo">
-      <p>Wave Aquatics is a nonprofit dedicated to providing access to aquatic programs that support health, fitness, safety, and community connection.</p>
+<div class="navbar-logo">
+      <a href="index.html">
+        <img src="../imgs/Wave-Logo.png" alt="Logo">
+      </a>
+    </div>  
+          <p>Wave Aquatics is a nonprofit dedicated to providing access to aquatic programs that support health, fitness, safety, and community connection.</p>
     </div>
 
     <div class="footer-links">
@@ -432,6 +450,7 @@
     </div>
   </div>
 </footer>
+
 
  <script src="/js/func.js"></script> 
   <script src="../js/func.js"></script> </body>

@@ -16,11 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
   dropdownToggles.forEach(toggle => {
     toggle.addEventListener('click', (e) => {
-      if (window.innerWidth < 768) { 
+      
         e.preventDefault();
         const parent = toggle.parentElement;
+           document.querySelectorAll('.dropdown.open').forEach(drop => {
+        if (drop !== parent) drop.classList.remove('open');
+      });
         parent.classList.toggle('open');
-      }
+      
     });
   });
 
