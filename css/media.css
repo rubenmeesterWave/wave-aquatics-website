@@ -15,6 +15,12 @@
     height: 50px;
     padding: 0.5rem 1rem;
   }
+.utility-left p,
+.utility-right p {
+
+    font-size: clamp(0.5rem, 1vw, 0.7rem); /* smaller min and max */
+
+}
   .utility-left,
   .utility-right {
     width: 100%;
@@ -23,6 +29,11 @@
   }
   .utility-right {
   gap: 0;
+}
+.navbar-logo img,
+.footer-logo img {
+  height: 2rem;
+  width: auto;
 }
  
     .navbar {
@@ -357,7 +368,9 @@
   padding: 50px;
   text-align: start;
   }
-   
+   .faqs{
+    height: 175vh;
+   }
  .newsletter-left,
   .newsletter-right {
     flex: 1 1 100%;              

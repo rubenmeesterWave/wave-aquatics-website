@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 600;
   margin-top: 2rem;
   margin: 0 0 .25rem 0;
