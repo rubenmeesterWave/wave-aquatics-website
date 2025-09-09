@@ -3,13 +3,16 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   
-  const hamburger = document.getElementById('hamburger');   
+   const hamburger = document.getElementById('hamburger');   
   const nav = document.querySelector('.nav-navigation');
 
-  hamburger.addEventListener('click', () => {
+  // Toggle nav when hamburger is clicked
+  hamburger.addEventListener('click', (e) => {
     nav.classList.toggle('open');
+    e.stopPropagation(); // prevent closing immediately
   });
 
+  // Toggle dropdowns on mobile
   const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
   dropdownToggles.forEach(toggle => {
     toggle.addEventListener('click', (e) => {
@@ -19,6 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
         parent.classList.toggle('open');
       }
     });
+  });
+
+  // Close nav if click happens outside nav
+  document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+      nav.classList.remove('open');
+
+      // Close all open dropdowns
+      document.querySelectorAll('.dropdown.open').forEach(drop => {
+        drop.classList.remove('open');
+      });
+    }
   });
 
   /* ========== FAQ Sidebar Active Link ========== */
